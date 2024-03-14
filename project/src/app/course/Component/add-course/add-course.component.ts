@@ -85,14 +85,7 @@ export class AddCourseComponent implements OnInit {
       }
     }
   }
-  // updateFormValues() {
-  //   const silibusFormArray = this.courseForm.get('syllabus') as FormArray;
-  //   silibusFormArray.removeAt(0);
-  //   this.course?.syllabus?.forEach((silibusItem) => {
-  //     silibusFormArray.push(new FormControl(silibusItem, [Validators.required]));
-  //   });
-   
-  // }
+
 
   addCourseSyllabusInput(): void {
     (this.courseForm.get('courseSyllabus') as FormArray).push(new FormControl(''));

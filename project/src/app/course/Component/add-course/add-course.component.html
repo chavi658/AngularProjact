@@ -1,41 +1,4 @@
-<!-- <app-home></app-home>
 
-<form [formGroup]="courseForm" (ngSubmit)="onSave()">
- 
-  <label for="coursName">Course Name:</label>
-  <input type="text" id="coursName" formControlName="coursName" required>
-
-  <label for="categoryId">Category:</label>
-  <select id="categoryId" formControlName="categoryId" required>
-    <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
-  </select>
-
-  <label for="numberOfSessions">Number of Sessions:</label>
-  <input type="number" id="numberOfSessions" formControlName="numberOfSessions" required>
-
-  <label for="startDate">Start Date:</label>
-  <input type="date" id="startDate" formControlName="startDate" required>
-
-  <label for="courseSyllabus">Syllabus:</label>
-  <div formArrayName="courseSyllabus">
-    <div *ngFor="let syllabusControl of courseSyllabus.controls; let i = index">
-      <input type="text" [formControlName]="i">
-      <button type="button" (click)="removeCourseSyllabusInput(i)">Remove</button>
-    </div>
-    <button type="button" (click)="addCourseSyllabusInput()">Add Syllabus</button>
-  </div>
-
-  <label for="wayOfLearning">Way of Learning:</label>
-  <input type="text" id="wayOfLearning" formControlName="wayOfLearning" required>
-
-  <label for="lecturerId">Lecturer ID:</label>
-  <input type="text" id="lecturerId" formControlName="lecturerId" required>
-
-  <label for="image">Image:</label>
-  <input type="text" id="image" formControlName="image">
-
-  <button (click)="onSave()">Save</button>
-</form> -->
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-lg-6">

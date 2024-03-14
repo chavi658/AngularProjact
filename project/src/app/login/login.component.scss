@@ -1,0 +1,49 @@
+/* login.component.css */
+
+/* סגנון כללי לכל התוויות */
+label {
+    color: #6a0dad; /* סגול */
+  }
+  
+  /* סגנון כללי לכל השדות הקלט */
+  input[type="text"], input[type="password"] {
+    background-color: #ffffff; /* לבן */
+    border-color: #6a0dad; /* סגול */
+    color: #000000; /* שחור */
+  }
+  
+  /* סגנון לכפתור */
+  button, .login-link {
+    background-color: #6a0dad; /* סגול */
+    border-color: #6a0dad; /* סגול */
+    color: #ffffff; /* לבן */
+    text-decoration: none; /* הסרת קו תחתון מהקישור */
+  }
+  
+  /* סגנון לקישור במצב hover */
+  button:hover, .login-link:hover {
+    background-color: #8e15d6; /* סגול כהה */
+    border-color: #8e15d6; /* סגול כהה */
+  }
+  
+  /* סגנון לחלק של הטופס בו מופיע שדה קלט לשם הקורס */
+  .course-input {
+    display: none;
+  }
+  
+  /* סגנון כללי לאייקונים */
+  .fa {
+    margin-right: 5px; /* רווח מימין של האייקון */
+  }
+  
+  /* סגנון כללי לכיתת הקומפוננטה */
+  .login-form {
+    width: 300px; /* רוחב קומפוננטה */
+    margin: 0 auto; /* מרכז קומפוננטה באופן אופטימלי */
+  }
+  
+  /* סגנון לאיקון של הכניסה כמרצה */
+  .fa-chalkboard-teacher {
+    margin-right: 8px; /* רווח מימין של האייקון */
+  }
+  

@@ -1,0 +1,59 @@
+.purple-form label {
+    color: purple;
+}
+
+.purple-form input[type="text"],
+.purple-form input[type="password"],
+.purple-form input[type="email"] {
+    border: 1px solid purple;
+    border-radius: 4px;
+    padding: 5px;
+    width: 20vw;
+}
+
+.purple-form button {
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.purple-form button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+}
+
+.purple-form a {
+    color: purple;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.purple-form a:hover {
+    text-decoration: underline;
+}.course-wrapper {
+    background-color: purple;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .course-details {
+    flex-grow: 1;
+  }
+  
+  .course-details img {
+    max-width: 100px;
+  }
+  
+  .course-buttons button {
+    margin-left: 10px;
+  }
+  

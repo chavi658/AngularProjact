@@ -1,0 +1,82 @@
+<!-- 
+<form [formGroup]="loginForm">
+    <div>
+        <label>Userid:</label>
+        <input type=text formControlName="id">
+    </div>
+    <div>
+        <label>password:</label>
+        <input type=text formControlName="password">
+    </div>
+    <button (click)="save()" [disabled]="!loginForm.valid">login</button>
+  
+<h3 *ngIf></h3>
+  </form> -->
+  <!-- <form [formGroup]="loginForm">
+    <div>
+        <label>Userid:</label>
+        <input type="text" formControlName="id">
+    </div>
+    <div>
+        <label>Password:</label>
+        <input type="password" formControlName="password">
+    </div>
+    <div *ngIf="isLecturer">
+        <label>Course Name:</label>
+        <input type="text" formControlName="courseName">
+    </div>
+    <button (click)="save()" [disabled]="!loginForm.valid">Login</button>
+
+    <a [routerLink]="['/login']" (click)="toggleIsLecturer()">Login as Lecturer</a>
+</form> -->
+
+<!-- קישור לכניסת מרצים -->
+<!-- <a [routerLink]="['/login']" (click)="toggleIsLecturer()">Login as Lecturer</a> -->
+<!-- <form [formGroup]="loginForm">
+    <div>
+        <label>Userid:</label>
+        <input type="text" formControlName="id">
+    </div>
+    <div>
+        <label>Password:</label>
+        <input type="password" formControlName="password">
+    </div>
+    <div *ngIf="isLecturer">
+        <label>Course Name:</label>
+        <input type="text" formControlName="coursName">
+    </div>
+    <button (click)="save()" [disabled]="!loginForm.valid">Login</button>
+</form>
+
+
+<a [routerLink]="['/login']" (click)="toggleIsLecturer()">Login as Lecturer</a> -->
+<!-- login.component.html -->
+
+<!-- login.component.html -->
+
+<form [formGroup]="loginForm" class="login-form">
+    <div class="form-group">
+      <label for="id"><i class="fas fa-user"></i> Userid:</label>
+      <input type="text" id="id" formControlName="id" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="password"><i class="fas fa-lock"></i> Password:</label>
+      <input type="password" id="password" formControlName="password" class="form-control">
+    </div>
+    <!-- שדה קלט חדש לשם הקורס -->
+    <div class="form-group " *ngIf="isLecturer2()" >
+      <label for="courseName"><i class="fas fa-book"></i> Course Name:</label>
+      <input type="text" id="courseName" formControlName="courseName" class="form-control">
+    </div>
+    <button (click)="save()" [disabled]="!loginForm.valid" class="btn btn-primary">
+      <i class="fas fa-sign-in-alt"></i> Login
+    </button>
+  </form>
+  
+  <!-- קישור לכניסת מרצים -->
+  <!-- <button (click)="toggleIsLecturer()" >lecturer-login -->
+    <!-- <i class="fas fa-chalkboard-teacher"></i> Login as Lecturer -->
+  <!-- </button> -->
+  <a [routerLink]="['/login']" (click)="toggleIsLecturer()">Login as Lecturer</a> 
+  
+  

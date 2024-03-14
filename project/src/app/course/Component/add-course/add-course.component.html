@@ -1,0 +1,97 @@
+<!-- <app-home></app-home>
+
+<form [formGroup]="courseForm" (ngSubmit)="onSave()">
+ 
+  <label for="coursName">Course Name:</label>
+  <input type="text" id="coursName" formControlName="coursName" required>
+
+  <label for="categoryId">Category:</label>
+  <select id="categoryId" formControlName="categoryId" required>
+    <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+  </select>
+
+  <label for="numberOfSessions">Number of Sessions:</label>
+  <input type="number" id="numberOfSessions" formControlName="numberOfSessions" required>
+
+  <label for="startDate">Start Date:</label>
+  <input type="date" id="startDate" formControlName="startDate" required>
+
+  <label for="courseSyllabus">Syllabus:</label>
+  <div formArrayName="courseSyllabus">
+    <div *ngFor="let syllabusControl of courseSyllabus.controls; let i = index">
+      <input type="text" [formControlName]="i">
+      <button type="button" (click)="removeCourseSyllabusInput(i)">Remove</button>
+    </div>
+    <button type="button" (click)="addCourseSyllabusInput()">Add Syllabus</button>
+  </div>
+
+  <label for="wayOfLearning">Way of Learning:</label>
+  <input type="text" id="wayOfLearning" formControlName="wayOfLearning" required>
+
+  <label for="lecturerId">Lecturer ID:</label>
+  <input type="text" id="lecturerId" formControlName="lecturerId" required>
+
+  <label for="image">Image:</label>
+  <input type="text" id="image" formControlName="image">
+
+  <button (click)="onSave()">Save</button>
+</form> -->
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+      <form [formGroup]="courseForm" (ngSubmit)="onSave()" class="purple-form">
+        <div class="form-group">
+          <label for="coursName">Course Name:</label>
+          <input type="text" id="coursName" formControlName="coursName" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="categoryId">Category:</label>
+          <select id="categoryId" formControlName="categoryId" class="form-control" required>
+            <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="numberOfSessions">Number of Sessions:</label>
+          <input type="number" id="numberOfSessions" formControlName="numberOfSessions" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="startDate">Start Date:</label>
+          <input type="date" id="startDate" formControlName="startDate" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="courseSyllabus">Syllabus:</label>
+          <div formArrayName="courseSyllabus">
+            <div *ngFor="let syllabusControl of courseSyllabus.controls; let i = index">
+              <input type="text" [formControlName]="i" class="form-control">
+              <button type="button" (click)="removeCourseSyllabusInput(i)" class="btn btn-danger">Remove</button>
+            </div>
+            <button type="button" (click)="addCourseSyllabusInput()" class="btn btn-primary">Add Syllabus</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="wayOfLearning">Way of Learning:</label>
+          <input type="text" id="wayOfLearning" formControlName="wayOfLearning" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="lecturerId">Lecturer ID:</label>
+          <input type="text" id="lecturerId" formControlName="lecturerId" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="image">Image:</label>
+          <input type="text" id="image" formControlName="image" class="form-control">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="button" (click)="cancelEdit()" class="btn btn-secondary">Cancel</button>
+      </form>
+    </div>
+  </div>
+</div>
+

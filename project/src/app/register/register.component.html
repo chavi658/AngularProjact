@@ -1,0 +1,59 @@
+<!-- <form [formGroup]="registerForm">
+    <div>
+        <label>Userid:</label>
+        <input type=text formControlName="id">
+    </div>
+    <div>
+        <label>password:</label>
+        <input type=text formControlName="password">
+    </div>
+    <div>
+        <label>Address:</label>
+        <input type=text formControlName="adress">
+    </div>
+    <div>
+        <label>Mail:</label>
+        <input type=email formControlName="email">
+    </div>
+    <div>
+        <label>Name:</label>
+        <input type=text formControlName="name">
+    </div>
+  
+    <button (click)="register()" [disabled]="!registerForm.valid">register</button>
+    <a routerLink=""></a>/do link 
+
+  </form> -->
+  <form [formGroup]="registerForm" class="purple-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="id">User ID:</label>
+            <input type="text" class="form-control" id="id" formControlName="id">
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" formControlName="password">
+          </div>
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" class="form-control" id="address" formControlName="address" placeholder="Address">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" formControlName="email">
+          </div>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" formControlName="name">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" (click)="register()" [disabled]="!registerForm.valid">Register</button>
+  </form>
+  
+

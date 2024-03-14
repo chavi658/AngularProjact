@@ -1,0 +1,24 @@
+footer{
+    background-color: black;
+    text-align: center;
+}
+/* קובץ styles.css או styles.scss */
+
+/* צבע רקע לקומפוננטה */
+:host {
+    background-color: black; /* לדוגמה: צבע כחול בהיר */
+  }
+#text{
+    text-align: center;
+    background-color: purple;
+    color: white;
+}
+  p{
+
+
+ position: fixed;
+ bottom: 0;
+ margin-bottom: 0;
+ width: 100vw;
+
+  }

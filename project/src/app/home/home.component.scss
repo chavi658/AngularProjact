@@ -1,0 +1,27 @@
+.btn {
+    background-color: purple; /* רקע סגול */
+    border-color: purple; /* גוון קו סגול */
+    color: #000000; /* צבע כיתוב שחור */
+    margin: 0.5rem; /* רווחים בין הכפתורים */
+  }
+  .btn-group{
+position: fixed;
+top:2vh;
+  }
+  
+  .btn:hover {
+    background-color: purple; /* גוון סגול בעת העכברוש */
+    border-color: purple; /* גוון קו סגול בעת העכברוש */
+    color: #ffffff; /* צבע לבן בעת העכברוש */
+  }
+  /* home.component.css */
+
+/* קביעת תצוגה קבועה של ה-home בחלק העליון של העמוד */
+:host {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* ויזואלי יהיה על הרקע */
+}
+
+  
+  

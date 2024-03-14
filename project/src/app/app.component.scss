@@ -1,0 +1,33 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css');
+/* app.component.css */
+
+/* קביעת פריסת העמוד לסגנון flex כדי לקבוע את קטן העמוד */
+// body {
+//     display: flex;
+//     flex-direction: column;
+//     min-height: 100vh; /* גובה מינימלי לעמוד כדי שהfooter תמיד יהיה בתחתית */
+//   }
+  
+//   /* קביעת תכונות העמוד */
+//   router-outlet {
+//     flex-grow: 1; /* עמוד ה- router ימלא את המקום הנותר בעמוד */
+//   }
+  
+//   /* קביעת מיקום ה-footer לתחתית */
+//   app-footer {
+//     margin-top: auto; /* מיקום ה-footer תמיד יהיה בתחתית */
+//   }
+  /* app.component.css */
+
+/* קביעת פריסת העמוד לסגנון flex כדי לקבוע את קטן העמוד */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* גובה מינימלי לעמוד כדי שהfooter תמיד יהיה בתחתית */
+  }
+  
+//   /* קביעת תכונות העמוד */
+//   app-body {
+//     flex-grow: 1; /* app-body תמלא את כל המקום הפנוי */
+//   }
+  

@@ -1,0 +1,23 @@
+/* קוד למסך קטן מידי */
+// @media (min-width: 576px) {
+//     img {
+//       width: calc(90% ); /* תמונה תתפרש על שליש מהעמוד */
+//       height: auto; /* יופי עם התמונה תתפרש על שליש מהעמוד */
+//     }
+//   }
+@media (min-width: 576px) {
+    img {
+      width: 98%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    img {
+      max-width: 1500px;
+    }
+  }
+  img {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  

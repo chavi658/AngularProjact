@@ -1,0 +1,58 @@
+<!-- {{course.coursName}}
+
+{{course.categoryId}}
+<br/>
+{{course.image}}
+<br/>
+{{course.numberOfSessions}}
+<br/>
+
+<span [innerHtml]="course.wayOfLearning | iconPipe"></span>
+<br/> 
+{{course.startDate}}
+
+<br/>
+<div *ngFor="let s of course.courseSyllabus">
+<h3>{{s}}</h3>
+</div> -->
+<!-- <app-home></app-home> -->
+<!-- {{course.coursName}}
+{{course.categoryId}}
+<br/>
+{{course.image}}
+<br/>
+{{course.numberOfSessions}}
+<br/> -->
+<!-- <h3 >{{course.wayOfLearning==0?"frintal":"zoom"}}</h3>
+
+ <span [innerHtml]="course.wayOfLearning | iconPipe"></span>
+
+
+<br/> 
+{{course.startDate}}
+
+<br/>
+<div *ngFor="let s of course.courseSyllabus">
+<h3>{{s}}</h3>
+</div> -->
+<!-- <div *ngIf="sessionStorage"></div>לעשות בדיקה אם זה מרצה אם כן  יוצג עוד כפתור -->
+
+
+<div class="course-card">
+    <h2>{{course.coursName}}</h2>
+    <p>קטגוריה: {{course.categoryId}}</p>
+    <img src="{{course.image}}" alt="תמונת הקורס">
+    <p>מספר שיעורים: {{course.numberOfSessions}}</p>
+    <p>אופן לימוד: <span [innerHtml]="course.wayOfLearning | iconPipe"></span></p>
+    <p>תאריך התחלה: {{course.startDate | date }}</p>
+    <div class="syllabus">
+      <h3>סילבוס:</h3>
+      <ul>
+        <li *ngFor="let s of course.courseSyllabus">
+          <span class="icon" [class.fa]="true" [class]="s"></span>
+          <span>{{s}}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+ 

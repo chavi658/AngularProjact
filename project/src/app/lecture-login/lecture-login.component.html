@@ -1,0 +1,35 @@
+<!-- <form [formGroup]="lectureForm">
+    <div>
+        <label>lecturerId:</label>
+        <input type=text formControlName="lecturerId">
+    </div>
+    <div>
+        <label>lecturerPassword:</label>
+        <input type=text formControlName="lecturerPassword">
+    </div>
+    <div>
+        <label>lecturerCourse:</label>
+        <input type=text formControlName="coursName">
+    </div>
+    <button (click)="login()" [disabled]="!lectureForm.valid">login</button>
+
+ </form> -->
+<!-- lecture.component.html -->
+<app-home></app-home>
+<form [formGroup]="lectureForm" class="lecture-form">
+    <div class="form-group">
+        <label><i class="fas fa-id-card"></i> Lecturer ID:</label>
+        <input type="text" formControlName="lecturerId" class="form-control">
+    </div>
+    <div class="form-group">
+        <label><i class="fas fa-lock"></i> Lecturer Password:</label>
+        <input type="password" formControlName="lecturerPassword" class="form-control">
+    </div>
+    <div class="form-group">
+        <label><i class="fas fa-book"></i> Lecturer Course:</label>
+        <input type="text" formControlName="courseName" class="form-control">
+    </div>
+    <button (click)="login()" [disabled]="!lectureForm.valid" class="btn btn-primary">
+        <i class="fas fa-sign-in-alt"></i> Login
+    </button>
+</form>
